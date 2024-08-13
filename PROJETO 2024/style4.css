@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #DAA520;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 45vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2  0px;
+  z-index: -2;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(95, 93, 93, 0.829);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.content h2, 
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+}
+
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  display: flex;
+  right: 15px;
+  bottom: 15px;
+}
+
+
+
+html,
+body1 {
+  height: 100vh;
+  width: 100vw;
+}
+
+body1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sleek__social {
+  background: rgb;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 33.33%;
+  text-align: center;
+}
+
+.sleek__social .btn {
+  display: inline-block;
+  background: rgba(223, 217, 217, 0.897);
+  width: 90px;
+  height: 90px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  -webkit-box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1);
+}
+
+.sleek__social .btn::before {
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  content: '';
+  width: 125%;
+  height: 125%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+}
+
+.sleek__social .btn .fab {
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 2.5rem;
+  line-height: 90px;
+}
+
+.sleek__social .btn__sleek--inactive.facebook::before, .sleek__social .facebook.btn::before {
+  background: #3b5998;
+}
+
+.sleek__social .btn__sleek--inactive.facebook .fab, .sleek__social .facebook.btn .fab {
+  color: #3b5998;
+}
+
+.sleek__social .btn__sleek--inactive.twitter::before, .sleek__social .twitter.btn::before {
+  background: rgb(66,133,244)
+}
+
+.sleek__social .btn__sleek--inactive.twitter .fab, .sleek__social .twitter.btn .fab {
+  color:rgb(66,133,244)
+}
+
+.sleek__social .btn__sleek--inactive.youtube::before, .sleek__social .youtube.btn::before {
+  background: #c4302b;
+}
+
+.sleek__social .btn__sleek--inactive.youtube .fab, .sleek__social .youtube.btn .fab {
+  color: #c4302b;
+}
+
+.sleek__social .btn__sleek--inactive.instagram::before, .sleek__social .instagram.btn::before {
+  background: #e95950;
+}
+
+.sleek__social .btn__sleek--inactive.instagram .fab, .sleek__social .instagram.btn .fab {
+  color: #e95950;
+}
+
+.sleek__social .btn__sleek--inactive.whatsapp::before, .sleek__social .whatsapp.btn::before {
+  background: #075e54;
+}
+
+.sleek__social .btn__sleek--inactive.whatsapp .fab, .sleek__social .whatsapp.btn .fab {
+  color: #075e54;
+}
+
+.sleek__social .btn__sleek--inactive::before, .sleek__social .btn::before {
+  -webkit-transform: translate(-100%, -100%) rotate(45deg);
+          transform: translate(-100%, -100%) rotate(45deg);
+}
+
+.sleek__social .btn__sleek--inactive .fab, .sleek__social .btn .fab {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.sleek__social .btn__sleek--active::before, .sleek__social .btn:focus::before, .sleek__social .btn:hover::before {
+  -webkit-transform: translate(-26%, -26%) rotate(45deg);
+          transform: translate(-26%, -26%) rotate(45deg);
+}
+
+.sleek__social .btn__sleek--active .fab, .sleek__social .btn:focus .fab, .sleek__social .btn:hover .fab {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
