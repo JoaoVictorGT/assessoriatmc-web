@@ -70,7 +70,7 @@ body {
 }
 
 .hero {
-  background-color: #6d685c;
+  background-image: url('./public/sal.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -116,6 +116,7 @@ body {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.2px;
+  margin: -20px 0 20px;
 }
 
 main {
