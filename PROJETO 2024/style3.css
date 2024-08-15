@@ -21,7 +21,7 @@ body {
 
 .nav {
   position: fixed;
-  background-color: #222;
+  background-color: #ffffff;
   top: 0;
   left: 0;
   right: 0;
@@ -44,7 +44,7 @@ body {
 }
 
 .nav a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -65,12 +65,12 @@ body {
 
 .nav a.current,
 .nav a:hover {
-  color: #DAA520;
+  color: #f71f1f;
   font-weight: bold;
 }
 
 .hero {
-  background-image: url('./public/sal.jpeg');
+  background-color: #f71f1f;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -167,7 +167,7 @@ footer {
 }
 
 .footer-link:hover {
-  color: #7f37c9;
+  color: #c93737;
 }
 
 #footer_copyright {

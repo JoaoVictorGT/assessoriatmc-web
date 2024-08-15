@@ -65,16 +65,17 @@ body {
 
 .nav a.current,
 .nav a:hover {
-  color: #DAA520;
+  color: #f71f1f;
   font-weight: bold;
 }
 
 .hero {
-  background-image: url('./public/sal.jpeg');
+  background-image: url('./public/logo.jpeg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 30vh;
+  background-size: contain; /* Garante que a imagem inteira seja visível */
+  background-position: center; /* Centraliza a imagem verticalmente e horizontalmente */
+  height: 100vh;
+  min-height: 600px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -167,7 +168,7 @@ footer {
 }
 
 .footer-link:hover {
-  color: #7f37c9;
+  color: #c93737;
 }
 
 #footer_copyright {
@@ -181,5 +182,33 @@ footer {
   #footer_content {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
   }
 }
