@@ -11,27 +11,29 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
   padding-bottom: 50px;
+  padding: 0;
+  margin: 0;
 }
 
 .container1 {
   max-width: 1200px;
-  margin: 0 auto;
-}
-
-.nav {
-  position: fixed;
-  background-color: #222;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.3s ease-in-out;
+  margin: 0 auto; 
 }
 
 .nav .container1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -43,7 +45,7 @@ body {
 }
 
 .nav a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -64,14 +66,14 @@ body {
 
 .nav a.current,
 .nav a:hover {
-  color: #DAA520;
+  color: #f71f1f;
   font-weight: bold;
 }
 
 :root {
-  --left-bg-color: rgba(221, 184, 18, 0.7);
+  --left-bg-color: rgba(221, 18, 45, 0.7);
   --right-bg-color: rgba(78, 78, 88, 0.8);
-  --left-btn-hover-color: rgb(221, 184, 18, 0.9);
+  --left-btn-hover-color: rgba(221, 18, 45, 0.7);
   --right-btn-hover-color: rgb(78, 78, 88, 0.9);
   --hover-width: 75%;
   --other-width: 25%;
@@ -143,7 +145,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('./public/sal.jpeg');
+  background: url('./public/rodape.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -158,7 +160,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('./public/sal.jpeg');
+  background: url('./public/cursos.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -194,15 +196,8 @@ h1 {
   width: var(--other-width);
 }
 
-@media (max-width: 800px) {
-  h1 {
-    font-size: 2rem;
-    top: 30%;
-  }
-
-  .btn {
-    padding: 1.2rem;
-    width: 12rem;
-  }
+.logo-img {
+  height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-right: 0px; /* Espaçamento entre a imagem e o texto */
+  vertical-align: middle;
 }
-
