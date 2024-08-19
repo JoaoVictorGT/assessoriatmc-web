@@ -19,20 +19,20 @@ body {
   margin: 0 auto;
 }
 
-.nav {
-  position: fixed;
-  background-color: #222;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all 0.3s ease-in-out;
-}
-
 .nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav {
+  position: fixed; /*se colocar relative a imagem fica do tamanho certo*/
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .nav a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -65,16 +65,17 @@ body {
 
 .nav a.current,
 .nav a:hover {
-  color: #DAA520;
+  color: #f71f1f;
   font-weight: bold;
 }
 
 .hero {
-  background-image: url('./public/sal.jpeg');
+  background-image: url('./public/logotipo.jpeg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  height: 30vh;
+  background-size: contain; /* Garante que a imagem inteira seja visível */
+  background-position: center; /* Centraliza a imagem verticalmente e horizontalmente */
+  height: 100vh; /* Ajuste a altura conforme necessário */
+  min-height: 600px; /* Define a altura mínima da hero section */
   color: #fff;
   display: flex;
   justify-content: center;
@@ -167,7 +168,7 @@ footer {
 }
 
 .footer-link:hover {
-  color: #7f37c9;
+  color: #c93737;
 }
 
 #footer_copyright {
@@ -182,4 +183,38 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+}
+
+.logo-img {
+  height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-right: 0px; /* Espaçamento entre a imagem e o texto */
+  vertical-align: middle;
 }
