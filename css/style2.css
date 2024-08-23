@@ -145,7 +145,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('./public/rodape.jpeg');
+  background: url('../public/rodape.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -160,7 +160,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('./public/cursos.jpeg');
+  background: url('../public/cursos.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }

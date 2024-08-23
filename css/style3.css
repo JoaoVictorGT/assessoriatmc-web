@@ -70,7 +70,7 @@ body {
 }
 
 .hero {
-  background-image: url('./public/logotipo.jpeg');
+  background-image: url('../public/logotipo.jpeg');
   background-repeat: no-repeat;
   background-size: contain; /* Garante que a imagem inteira seja visível */
   background-position: center; /* Centraliza a imagem verticalmente e horizontalmente */
