@@ -36,10 +36,17 @@
           <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
               <div class="card-item swiper-slide">
-                <img decoding="async" src="../public/bombeiro-civil.jpg" alt="User Image" class="user-image">
+                <img decoding="async" src="../public/salva-vidas.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">Guarda Vidas</h2>
-                <p class="user-profession">Bla bla</p>
-                <button class="message-button" onclick="redirectToPage('html/index-curso1.html')">Saiba Mais</button>
+                <p class="user-profession">Curso preparatório para guarda vidas</p>
+                <button class="message-button" onclick="redirectToPage('../html/index-curso1.html')">Saiba Mais</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img decoding="async" src="../public/bombeiro-civil.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Bombeiro Civil</h2>
+              <p class="user-profession">Curso preparatório para bombeiro civil</p>
+              <button class="message-button" onclick="redirectToPage('../html/index-curso13.html')">Saiba Mais</button>
             </div>
       
               <div class="card-item swiper-slide">
@@ -73,14 +80,14 @@
               <div class="card-item swiper-slide">
                 <img decoding="async" src="../public/nr35.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">NR 35</h2>
-                <p class="user-profession">blk blk</p>
+                <p class="user-profession"> bla</p>
                 <button class="message-button" onclick="redirectToPage('../html/index-curso6.html')">Saiba Mais</button>
               </div>
 
               <div class="card-item swiper-slide">
                 <img decoding="async" src="../public/nr33.jpg" alt="User Image" class="user-image">
                 <h2 class="user-name">NR 33</h2>
-                <p class="user-profession">blk blk</p>
+                <p class="user-profession">Normas e Regulamentos Aplicáveis ao Trabalho</p>
                 <button class="message-button" onclick="redirectToPage('../html/index-curso7.html')">Saiba Mais</button>
               </div>
 
@@ -127,7 +134,10 @@
         </div>
       
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      
+      <script> function redirectToPage(url) {
+        window.location.href = url;
+    }
+      </script>
         <script src="../scripts/script5.js"></script>
         </div>
     </body>

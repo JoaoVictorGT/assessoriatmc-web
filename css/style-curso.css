@@ -1,220 +1,189 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #222;
-  padding-bottom: 50px;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("#") rgb(78, 78, 88, 0.9) no-repeat center;
 }
 
-.container {
+.container1 {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
-.nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  transition: all 0.3s ease-in-out;
-}
 
 .nav {
-  position: fixed; /*se colocar relative a imagem fica do tamanho certo*/
-  background-color: #ffffff;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-.nav ul {
+.nav .container1 {
   display: flex;
-  list-style-type: none;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav .nav-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.nav .logo-image {
+  height: 40px; /* Ajuste o tamanho conforme necessário */
+  margin-right: 10px; /* Espaçamento entre a logo e o texto */
+}
+
+.nav .logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; /* Cor do texto */
+  line-height: 1; /* Para garantir o alinhamento vertical */
 }
 
 .nav a {
-  color: #000000;
-  text-decoration: none;
-  padding: 7px 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav.active {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.nav.active a {
   color: #000;
-}
-
-.nav.active .container {
-  padding: 10px 0;
-}
-
-.nav a.current,
-.nav a:hover {
-  color: #f71f1f;
-  font-weight: bold;
-}
-
-.hero {
-  background-image: url('./public/logotipo.jpeg');
-  background-repeat: no-repeat;
-  background-size: contain; /* Garante que a imagem inteira seja visível */
-  background-position: center; /* Centraliza a imagem verticalmente e horizontalmente */
-  height: 100vh; /* Ajuste a altura conforme necessário */
-  min-height: 600px; /* Define a altura mínima da hero section */
-  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  position: relative;
-  margin-bottom: 20px;
-  z-index: -2;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+.nav a:hover {
+  color: rgba(221, 18, 45, 0.9);
 }
 
-.hero h1 {
-  font-size: 46px;
-  margin: -20px 0 20px;
+.nav .back-button i,
+.nav .whatsapp-button i {
+  font-size: 1.5rem;
 }
 
-.hero p {
-  font-size: 20px;
-  letter-spacing: 1px;
+.nav .whatsapp-button {
+  color: #25D366;
 }
 
-.content h2,
-.content h3 {
-  font-size: 150%;
-  margin: 20px 0;
+@media (max-width: 768px) {
+  .nav a {
+    font-size: 1.25rem;
+  }
+
+  .nav .logo-image {
+    height: 30px;
+  }
+
+  .nav .logo-text {
+    font-size: 1.25rem;
+  }
 }
 
-.content p {
-  color: #555;
-  line-height: 30px;
-  letter-spacing: 1.2px;
-  margin: -20px 0 20px;
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
 }
 
-main {
-  height: 10vh;
-}
-
-footer {
-  width: 100%;
-  color: #fff;
-  background-color: #555;
-}
-
-#footer_content {
+.card-list .card-item {
+  height: auto;
+  user-select: none;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  text-align: center;
-}
-
-#footer_contacts {
-  margin-bottom: 1.5rem;
-}
-
-#footer_contacts h1 {
-  margin-bottom: 0.75rem;
-}
-
-#footer_social_media {
-  display: flex;
-  gap: 1rem;
   justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background: #ffffff33;
+  border: 1px solid #ffffff80;
 }
 
-.footer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 4px solid rgba(221, 18, 45, 0.9);
+  padding: 4px;
+}
+.card-list .card-item .user-name{
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: 500;
 }
 
-.footer-list li {
-  margin-bottom: 0.75rem;
+.card-list .card-item .user-profession {
+  font-size: 16px;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
 }
 
-.footer-link {
+.card-list .card-item .message-button {
+  font-size: 16px;
+  padding: 10px 35px;
   color: #fff;
-  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: rgba(221, 18, 45, 0.9);
+  border: 2px solid transparent;
+  transition: 0.5s;
 }
 
-.footer-link:hover {
-  color: #c93737;
+.card-list .card-item .message-button:hover {
+  background: #ffffff1a;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
-#footer_copyright {
-  background-color: #444;
-  padding: 1rem;
-  font-size: 0.85rem;
-  text-align: center;
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
 }
 
-@media screen and (max-width: 768px) {
-  #footer_content {
-    flex-direction: column;
-    text-align: center;
-  }
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 50vh;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  margin-top: -55px;
+  transition: 0.5s;
 }
 
-@media screen and (max-width: 480px) {
-  .hero {
-    height: 40vh;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
+.slider-wrapper .swiper-slide-button:hover {
+  color: rgba(221, 18, 45, 0.9);
 }
 
-.logo-img {
-  height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
-  margin-right: 0px; /* Espaçamento entre a imagem e o texto */
-  vertical-align: middle;
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 20px 40px;
+    padding: 0 30px;
+  }
 }

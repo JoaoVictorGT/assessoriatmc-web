@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .back-button, .whatsapp-button {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .course-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  footer {
+    width: 100%;
+    color: #fff;
+    background-color: #555;
+  }
+
+  #footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #footer_contacts {
+    margin-bottom: 1.5rem;
+  }
+
+  #footer_contacts h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  #footer_social_media {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-list li {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+    color: #c93737;
+  }
+
+  #footer_copyright {
+    background-color: #444;
+    padding: 1rem;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    #footer_content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero {
+      height: 50vh;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+    }
+
+    .hero p {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero {
+      height: 40vh;
+    }
+
+    .hero h1 {
+      font-size: 24px;
+    }
+
+    .hero p {
+      font-size: 14px;
+    }
+  }
